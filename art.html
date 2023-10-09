@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dante S-K - Art</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <a class="sidebar-name">Dante Saxton-Knight</a>
+    <a class="sidebar-name">|</a>
+    <a href="index.html" class="sidebar-button">Home</a>
+    <a href="games.html" class="sidebar-button">Games</a>
+    <a href="music.html" class="sidebar-button">Music</a>
+    <a href="art.html" class="sidebar-button">Art</a>
+    <a href="CV.html" class="sidebar-button">CV</a>
+  </div>
+  
+  <div class="paragraphs">
+    <h1>My Art ✏️</h1>
+    <p style="text-align: center;">Here are some of my drawings (click to zoom):</p>
+
+    <div class="gallery">
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image0.png" alt="Image 0">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image1.png" alt="Image 1">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image2.jpg" alt="Image 2">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image3.jpg" alt="Image 3">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image4.jpg" alt="Image 4">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image5.jpg" alt="Image 5">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image6.png" alt="Image 6">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image7.jpg" alt="Image 7">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image8.png" alt="Image 8">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image9.jpg" alt="Image 9">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image10.png" alt="Image 10">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image11.jpg" alt="Image 11">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image12.jpg" alt="Image 12">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image13.jpg" alt="Image 13">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image14.jpg" alt="Image 14">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image15.jpg" alt="Image 15">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image16.jpg" alt="Image 16">
+      </div>
+      <div class="thumbnail" onclick="expandImage(this)">
+        <img src="artworks/image17.png" alt="Image 17">
+      </div>
+    </div>
+
+  <p style="text-align:center">I also made a collection of parody logos from my favourite games featuring my online moniker:</p>
+
+  <div class="gallery">
+    <div class="thumbnail" onclick="expandImage(this)">
+      <img src="artworks/logo1.png" alt="Logo 1">
+    </div>
+    <div class="thumbnail" onclick="expandImage(this)">
+      <img src="artworks/logo2.png" alt="Logo 2">
+    </div>
+    <div class="thumbnail" onclick="expandImage(this)">
+      <img src="artworks/logo3.png" alt="Logo 3">
+    </div>
+    <div class="thumbnail" onclick="expandImage(this)">
+      <img src="artworks/logo4.png" alt="Logo 4">
+    </div>
+    <div class="thumbnail" onclick="expandImage(this)">
+      <img src="artworks/logo5.png" alt="Logo 5">
+    </div>
+    <div class="thumbnail" onclick="expandImage(this)">
+      <img src="artworks/logo6.png" alt="Logo 6">
+    </div>
+    <div class="thumbnail" onclick="expandImage(this)">
+      <img src="artworks/logo7.png" alt="Logo 7">
+    </div>
+    <div class="thumbnail" onclick="expandImage(this)">
+      <img src="artworks/logo8.png" alt="Logo 8">
+    </div>
+    <div class="thumbnail" onclick="expandImage(this)">
+      <img src="artworks/logo9.png" alt="Logo 9">
+    </div>
+  </div>
+  
+
+  <div class="expanded" onclick="closeExpandedImage(this)">
+    <img src="" alt="Expanded Image">
+  </div>
+
+  <script>
+    function expandImage(element) {
+      var expandedImage = document.querySelector('.expanded img');
+      expandedImage.src = element.querySelector('img').src;
+      document.querySelector('.expanded').style.display = 'flex';
+    }
+
+    function closeExpandedImage(element) {
+      element.style.display = 'none';
+    }
+  </script>
+
+
+
+  </div>
+</body>
+</html>
